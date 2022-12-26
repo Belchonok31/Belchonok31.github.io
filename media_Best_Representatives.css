@@ -1,0 +1,327 @@
+/*--------------------------------Header---------------------------------------------*/
+@media (max-width: 1348px){
+    .containe .navbar_menu a{
+        font-size: 22px;
+    }
+}
+@media (max-width: 1325px){
+    .containe .navbar_logo a{
+        font-size: 32px;
+    }
+}
+@media (max-width: 1325px){
+    .containe .navbar_logo a{
+        font-size: 30px;
+    }
+    .containe .navbar_menu{
+        position: relative;
+        top: 4px;
+    }
+}
+@media (max-width: 1290px){
+    .containe .navbar_logo a{
+        font-size: 28px;
+    }
+    .containe .navbar_menu a{
+        font-size: 20px;
+    }
+}
+@media (max-width: 1230px){
+    .containe .navbar_logo a{
+        font-size: 26px;
+    }
+    .containe .navbar_menu a{
+        font-size: 18px;
+        position: relative;
+        top: 4px;
+    }
+}
+@media (max-width: 1170px){
+    .containe .navbar_logo a{
+        font-size: 24px;
+    }
+    .containe .navbar_menu a{
+        font-size: 16px;
+    }
+    .containe{
+        padding-bottom: 10px
+    }
+}
+@media (max-width: 1112px){
+    .containe .navbar_logo a{
+        font-size: 22px;
+    }
+    .containe .navbar_menu a{
+        font-size: 15px;
+    }
+}
+@media (max-width: 1074px){
+    .navbar_menu{
+        display: none
+    }
+    .label_inputik{
+        visibility: visible;
+    }
+    .containe .navbar_logo a{
+        font-size: 30px;
+    }
+}
+@media (max-width: 640px){
+    .containe .navbar_logo a{
+        font-size: 22px;
+    }
+    .containe .navbar_logo img{
+        height: 60px;
+        width: 60px;
+    }
+    .label_inputik{
+        top: 40px;
+    }
+    .label_inputik p{
+        font-size: 22px;
+    }
+}
+@media (max-width: 555px){
+     .containe .navbar_logo a{
+        font-size: 18px;
+    }
+    .containe .navbar_logo img{
+        position: relative;
+        top: 5px;
+        height: 50px;
+        width: 50px;
+    }
+    .label_inputik{
+        top: 37px;
+    }
+    .label_inputik p{
+        font-size: 18px;
+    }
+}
+@media (max-width: 515px){
+    .containe .navbar_logo a{
+        font-size: 18px;
+    }
+    .containe .navbar_logo img{
+        position: relative;
+        top: 15px;
+        height: 40px;
+        width: 40px;
+    }
+    .label_inputik{
+        top: 36px;
+        right: 100px;
+    }
+    .label_inputik p{
+        font-size: 18px;
+    }
+    .navbar_logo{
+        margin-left: 50px;
+    }
+}
+@media (max-width: 405px){
+    .label_inputik{
+        top: 36px;
+        right: 70px;
+    }
+}
+@media (max-width: 376px){
+    .label_inputik p{
+        visibility: hidden;
+    }
+    .containe .navbar_logo a{
+        font-size: 20px;
+    }
+
+}
+@media (max-width: 360px){
+    .burger .logo_number_burger{
+        margin-left: 20px;
+    }
+}
+@media (max-width: 330px){
+    .burger .logo_number_burger{
+        margin-left: 30px;
+    }
+}
+/*--------------------------------wallpaper---------------------------------------------*/
+@media (max-width: 1000px){
+    .wallpaper .text{
+        font-size: 2.5vw;
+    }
+}
+@media (max-width: 870px){
+    .wallpaper .text{
+        font-size: 3vw;
+    }
+}
+@media (max-width: 645px){
+    .wallpaper .text{
+        font-size: 3.5vw;
+    }
+}
+@media (max-width: 451px){
+    .wallpaper .text{
+        font-size: 4vw;
+    }
+}
+@media (max-width: 370px){
+    .wallpaper .text{
+        font-size: 4.5vw;
+    }
+}
+/*--------------------------------section_slaider---------------------------------------------*/
+@media (max-width:1080px){
+    .itc-slider__item .image img{
+        height: 80%;
+    }
+}
+@media (max-width:920px){
+    .itc-slider__item .image img{
+        height: 70%;
+    }
+    .itc-slider__item .personal_info{
+        gap: 5px;
+    }
+    .itc-slider__item .personal_info h1{
+        font-size: 34px;
+    }
+    .itc-slider__item .personal_info .club, .itc-slider__item .personal_info .citizenship, .itc-slider__item .personal_info .position, .itc-slider__item .personal_info .years{
+        font-size: 22px;
+    }
+    .itc-slider__item .personal_info .club img, .itc-slider__item .personal_info .citizenship img, .itc-slider__item .personal_info .position img{
+        height: 35px;
+        width: 35px;
+    }
+}
+@media (max-width:825px){
+    .itc-slider__item {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: 750px;
+        position: relative;
+    }
+    .itc-slider__item{
+        flex-direction: column;
+    }
+    .itc-slider__item .image{
+        align-self: center;
+        width: 80%;
+    }
+    .itc-slider__item .image img{
+        height: 90%;
+    }
+    .itc-slider__item .personal_info{
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 80%;
+        gap: 20px;
+    }
+    .itc-slider__item .personal_info h1{
+        font-size: 38px;
+        width: 100%;
+    }
+    .itc-slider__item .personal_info .club, .itc-slider__item .personal_info .citizenship, .itc-slider__item .personal_info .position, .itc-slider__item .personal_info .years{
+        font-size: 26px;
+    }
+}
+@media (max-width:490px){
+    .itc-slider__item .personal_info h1{
+        font-size: 32px;
+    }
+    .itc-slider__item .personal_info .club, .itc-slider__item .personal_info .citizenship, .itc-slider__item .personal_info .position, .itc-slider__item .personal_info .years{
+        font-size: 20px;
+    } 
+    .itc-slider__item .personal_info .club img, .itc-slider__item .personal_info .citizenship img, .itc-slider__item .personal_info .position img{
+        height: 30px;
+        width: 30px;
+    }
+}
+@media (max-width:415px){
+    .itc-slider__item .personal_info h1{
+        font-size: 30px;
+    }
+    .itc-slider__item .personal_info .club, .itc-slider__item .personal_info .citizenship, .itc-slider__item .personal_info .position, .itc-slider__item .personal_info .years{
+        font-size: 18px;
+    } 
+    .itc-slider__item .personal_info .club img, .itc-slider__item .personal_info .citizenship img, .itc-slider__item .personal_info .position img{
+        height: 30px;
+        width: 30px;
+    }
+    .itc-slider__item .image{
+        align-self: start;
+        width: 70%;
+    }
+    .itc-slider__item .image img{
+        height: 60%;
+    }
+    .itc-slider__item{
+        gap: 0;
+    }
+}
+@media (max-width:392px){
+    .itc-slider__item .personal_info h1{
+        font-size: 28px;
+    }
+    .itc-slider__item .personal_info .club, .itc-slider__item .personal_info .citizenship, .itc-slider__item .personal_info .position, .itc-slider__item .personal_info .years{
+        font-size: 15px;
+    } 
+    .itc-slider__item .personal_info .club img, .itc-slider__item .personal_info .citizenship img, .itc-slider__item .personal_info .position img{
+        height: 20px;
+        width: 20px;
+    }
+    .itc-slider__item .image{
+        width: 80%;
+    }
+    .itc-slider__item .image img{
+        height: 40%;
+    }
+}
+@media (max-width:348px){
+    .itc-slider__item .personal_info h1{
+        font-size: 28px;
+    }
+    .itc-slider__item .personal_info .club, .itc-slider__item .personal_info .citizenship, .itc-slider__item .personal_info .position, .itc-slider__item .personal_info .years{
+        font-size: 15px;
+    } 
+    .itc-slider__item .personal_info .club img, .itc-slider__item .personal_info .citizenship img, .itc-slider__item .personal_info .position img{
+        display: none;
+    }
+    .itc-slider__item .image{
+        width: 80%;
+    }
+    .itc-slider__item .image img{
+        height: 40%;
+    }
+    .section_slaider .text{
+        gap: 5px;
+    }
+}
+/*--------------------------------Footer---------------------------------------------*/
+@media (max-width: 1170px){
+    address nav .containe{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+}
+@media (max-width: 780px){
+    address nav .containe{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+}
+@media (max-width: 600px){
+    address nav .containe{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+        gap: 20px;
+    }
+}
+@media (max-width: 375px){
+    address nav .containe{
+        padding-left: 10px;
+    }
+}

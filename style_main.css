@@ -1,0 +1,657 @@
+body{
+    margin:0;
+    padding: 0;
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    /* background-color:rgba(255, 248, 220, 0.715); */
+    background-color: white;
+    font-family: 'Balsamiq Sans', cursive;
+}
+/*..............................Header...........................................................*/
+.navbar{
+    display: block;
+    height: 200px;
+    width: inherit;
+}
+.navbar .container:before{
+    position:absolute;
+    content:"";
+    width: 90vw;
+    height: 8px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    top:0;
+    left: 5vw;
+    background-color: rgb(13, 146, 13);
+}
+.navbar .container{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 1px solid rgb(13, 146, 13);
+}
+.navbar_logo{
+    margin-top:20px;
+    margin-left: 100px;
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    gap:15px;
+    cursor: pointer;
+}
+.navbar_logo img{
+    height: 80px;
+    width: 80px;
+}
+.navbar_logo a{
+    text-decoration: none;
+    color:black;
+    margin-top: 30px;
+    font-size: 36px;
+    font-weight: 600;
+}
+.navbar_menu{
+    display:flex;
+    flex-direction: row;
+    gap: 35px;
+    margin-right: 150px;
+    margin-top: 15px;
+    position: relative;
+}
+.logo_number{
+    display: flex;
+    flex-direction: row;
+    gap:5px;
+    align-items: center;
+    transition: .3s;
+}
+.logo_number img{
+    height: 20px;
+    width: 20px;
+}
+.logo_number a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 23px;
+}
+.logo_number:hover{
+    scale: 1.1;
+    transition: .3s;
+}
+#inputik{
+    display:none;
+}
+.label_inputik{
+    position: absolute;
+    right: 155px;
+    top: 45px;
+    cursor:pointer;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 7;
+    visibility: hidden;
+}
+.label_inputik img{
+    height: 30px;
+    width: 30px;
+    transform: rotate(0deg) scale(1);
+    transition:  transform .5s;
+}
+#inputik:checked ~.label_inputik img{
+    transform: rotate(170deg) scale(1.4);
+    transition: .5s;
+}
+.label_inputik p{
+    font-size: 28px;
+    color: black;
+    font-weight: 600;
+    transform:scale(1);
+    transition: transform .5s;
+}
+#inputik:checked ~.label_inputik p{
+    transform: translateX(-80px) scale(1.2);
+    transition: .5s;
+}
+.burger{
+    position: absolute;
+    right: 0;
+    transition: all .3s;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position:absolute;
+    height: 3100px;
+    width: 0px;
+    top: 0;
+    background-color:rgba(13, 146, 13, 0.89);
+    z-index: 6;
+    overflow:hidden;
+}
+.burger .logo_number_burger{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding-bottom: 5px;
+  border-bottom: 5px solid black;
+  border-radius: 2px;
+  margin-right: 10px;
+  /* margin-left: 25px; */
+}
+.burger .logo_number_burger img{
+    height: 40px;
+    width: 40px;
+}
+.burger .logo_number_burger a{
+    text-decoration: none;
+    color: black;
+    font-size: 26px;
+}
+#inputik:checked ~ .burger{
+    transition: all 0.3s;
+    width: 320px;
+    padding:120px 20px;
+}
+/*..............................Main...........................................................*/
+.legend_pict{
+    margin-right: 18px;
+    height: 500px;
+    border: 10px solid rgb(13, 146, 13);
+    background-color: white !important;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+.legend_pict .sos{
+    visibility: hidden;
+    width: 540px;
+}
+.legend_pict .container{
+    height: inherit;
+    width: inherit;
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+}
+.legend{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: inherit;
+}
+.legend h2{
+    font-size: 36px;
+    position: absolute;
+    left:450px;
+    top:-16px;
+}
+.legend_li{
+    position:absolute;
+    left:20px;
+    top:60px;
+    font-size: 32px;
+}
+.legend_li li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.legend_li li:before{
+    font-weight: 1000;
+    color:rgb(13, 146, 13);
+    content:"•";
+    padding-right: 10px;
+}
+.legend pre{
+    position: absolute;
+    left: 50px;
+    bottom: 45px;
+    font-size: 30px;
+    font-family: 'Balsamiq Sans', cursive;
+    line-height: 40px;
+}
+.pict{
+    height: inherit;
+    width: 50%;
+    position: relative;
+}
+.pict img{
+    position: absolute;
+}
+.pict_1{
+    height: 300px;
+    width: 280px;
+    right: -30px;
+    bottom: 100px;
+    z-index: 2;
+}
+.pict_2{
+    height: 300px;
+    width: 280px;
+    right: 200px;
+    bottom: 100px;
+    z-index:2;
+}
+.pict_3{
+    height: 250px;
+    width: 230px;
+    z-index: 1;
+    right: 80px;
+    bottom: 170px;
+}
+/*..............................Like_football...........................................................*/
+.like_football{
+    margin: 100px 20px 0 10px;
+    background-color: white !important;
+    border:10px solid rgb(7, 86, 159);
+    border-radius: 20px;
+    padding: 20px 50px;
+}
+.text_about_football .ahka{
+    text-align: center;
+}
+.text_about_football h2{
+    font-size: 36px;
+}
+.text_about_football p{
+    font-size: 24px;
+    font-weight: 800;
+}
+.gridik{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: 800;
+}
+.container_1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    order:1;
+}
+.container_2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    order:2;
+}
+.container_3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    order:3;
+}
+.container_4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    order:4;
+}
+.container_5{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    order:5;
+}
+.container_6{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+    order:6;
+}
+.gridik img{
+    height: 120px;
+    width: 120px;
+}
+/*..............................simple...........................................................*/
+.simple{
+    margin: 50px 20px 0 10px;
+    border: 10px solid orange;
+    padding: 40px 50px;
+    background-color: white;
+    border-radius: 20px;
+}
+.simple .info{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.simple .info h2{
+    font-size: 38px;
+    align-self: center;
+    margin: 0  0 20px 0;
+}
+.simple .info p{
+    font-size: 24px;
+}
+.simple .container_1, .simple .container_2{
+    display: flex;
+    width: inherit;
+    margin-top: 20px;
+}
+.simple .container_1 img{
+    height: 50vh;
+    width: 50vw;
+    border: 12px solid orange;
+    border-radius: 10px;
+}
+.simple .container_2 img{
+    height: 50vh;
+    width: 50vw;
+    border: 12px solid orange;
+    border-radius: 10px;
+    order: 2;
+}
+.every_day, .only_ball{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    border: 10px solid rgba(255, 166, 0, 0.488);
+    border-radius: 10px;
+    padding: 25px 20px;
+    text-align: center;
+}
+.only_ball h3, .every_day h3{
+    font-size: 35px;
+    margin: 25px 0 10px 0;
+    position: relative;
+}
+.only_ball h3::after,  .every_day h3::after{
+    content:"";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    height: 4px;
+    width: 0%;
+    background-color: orange;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all 0.6s;
+}
+.every_day:hover h3::after, .only_ball:hover h3::after{
+    width: 100%;
+    opacity: 1;
+}
+.only_ball p, .every_day p{
+    font-size:30px;
+}
+/*..............................last_one...........................................................*/
+.last_one{
+    margin-top: 50px;
+    padding: 0 20px;
+}
+.words{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.words .container_1, .words .container_2{
+    font-size: 40px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+.words .container_1 p, .words .container_2 p{
+    margin: 0;
+}
+.words .container_1 img{
+    height: 40px;
+    width: 40px;
+}
+.words .container_2 img{
+    height: 40px;
+    width: 40px;
+    transform: rotate(90deg);
+}
+.cards{
+    margin-top: 50px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.card_1, .card_2, .card_3{
+    display:flex;
+    flex-direction: column;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    position:relative;
+    text-align: center;
+}
+.card_1{
+    border: 5px solid rgb(13, 146, 13);
+}
+.card_2{
+    border: 5px solid rgb(7, 86, 159);
+    order: 2;
+}
+.card_3{
+    border: 5px solid orange;
+    order: 1;
+}
+.card_1 h3, .card_2 h3{
+    font-size: 30px;
+    position: relative;
+    align-self: center;
+}
+.card_3 .logo{
+    text-align:center;
+}
+.card_3 .logo h3{
+    margin-top: 15px;
+    position: relative;
+    font-size: 30px;
+}
+.card_1 h3:before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: -15%;
+    height: 2px;
+    width: 130%;
+    background-color: rgb(13, 146, 13);
+}
+.card_2 h3:before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: -5%;
+    height: 2px;
+    width: 110%;
+    background-color: rgb(7, 86, 159);
+}
+.card_3 h3:before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 3%;
+    height: 2px;
+    width: 94%;
+    background-color: orange;
+}
+.card_1 p, .card_2 p, .card_3 p{
+    font-size: 18px;
+    margin-left: 5px;
+}
+.card_1 p{
+    margin-top:40px;
+}
+.label{
+    display: flex;
+    justify-content: center;
+}
+.card_1 .label{
+    margin-top: 10px;
+}
+.card_3 .label{
+    margin-top: 15px;
+}
+.card_1 a, .card_2 a, .card_3 a{
+    border-radius: 10px;
+    font-size: 22px;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    overflow: hidden;
+}
+.card_1 a{
+    border: 4px solid rgb(13, 146, 13);
+}
+.card_2 a{
+    border: 4px solid rgb(7, 86, 159);
+}
+.card_3 a{
+    border: 4px solid orange;
+}
+.yzor{
+    height: 45px;
+    width: 45px;
+    align-self: center;
+    position: absolute;
+    top:70px;
+}
+.card_3 .yzor{
+    top:85px !important;
+}
+.card_1 a:before, .card_2 a:before, .card_3 a:before{
+    content:"";
+    background-color: rgba(255, 255, 255, 0.558);
+    height: 50px;
+    width: 2em;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: -4.5em;
+    transform: skewX(-45deg) translateX(0);
+}
+.card_1 a:hover{
+    background-color: rgb(13, 146, 13);
+    color: #fff;
+    border-bottom: 4px solid darken(rgb(13, 146, 13),10%);
+}
+.card_1 a:hover:before{
+    transform: skewX(-45deg) translateX(13.5em);
+    transition: all 0.5s ease-in-out;
+}
+.card_2 a:hover{
+    background-color: rgb(7, 86, 159);
+    color: #fff;
+    border-bottom: 4px solid darken(rgb(7, 86, 159),10%);
+}
+.card_2 a:hover:before{
+    transform: skewX(-45deg) translateX(13.5em);
+    transition: all 0.5s ease-in-out;
+}
+.card_3 a:hover{
+    background-color: orange;
+    color: #fff;
+    border-bottom: 4px solid darken(orange,10%);
+}
+.card_3 a:hover:before{
+    transform: skewX(-45deg) translateX(13.5em);
+    transition: all 0.5s ease-in-out;
+}
+/*..............................Footer...........................................................*/
+address nav .container{
+    margin-top: 50px;
+    padding: 40px 60px 20px 60px;
+    display: flex;
+    flex: row;
+    gap: 60px;
+    background:linear-gradient(rgba(13, 146, 13, 0.055),rgba(13, 146, 13, 0.132)) ;
+}
+.logo_info{
+    display:flex;
+    flex-direction: column;
+}
+.logo_info .logo{
+    display:flex;
+    flex-direction: row;
+    gap:5px;
+}
+.logo_info .logo img{
+    height: 60px;
+    width: 60px;
+}
+.logo_info .logo p{
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.info p{
+    margin: 0px;
+    color: black;
+}
+.info .belochka{
+    margin-bottom: 5px;
+    width: 260px;
+}
+.legend_footer{
+    font-size:20px;
+    color:black;
+}
+.ahki{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-top: 15px;
+}
+.ahki a{
+    text-decoration:none;
+    color:black;
+    font-size: 18px;
+    color:rgba(13, 146, 13, 0.504);
+}
+.contact{
+    display:flex;
+    flex-direction: column;
+}
+.contact a{
+    margin-bottom: 5px;
+    color: black;
+    text-decoration: none;
+}
+.contact .mail{
+    color: orange;
+}
+.contact .tel{
+    font-size: 24px;
+}
+.seti{
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+}
+.seti .icons{
+    display: flex;
+    gap:15px;
+    font-size: 30px;
+}
+.seti .icons #vk{
+    color:rgb(7, 86, 159);
+}
+.seti .icons #wh{
+    color:rgb(13, 146, 13);
+}
+.seti .icons #yo{
+    color:red;
+}

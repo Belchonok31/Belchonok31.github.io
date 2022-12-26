@@ -1,0 +1,358 @@
+/*--------------------------------Header---------------------------------------------*/
+@media (max-width: 1348px){
+    .container .navbar_menu a{
+        font-size: 22px;
+    }
+}
+@media (max-width: 1325px){
+    .container .navbar_logo a{
+        font-size: 32px;
+    }
+}
+@media (max-width: 1325px){
+    .container .navbar_logo a{
+        font-size: 30px;
+    }
+    .container .navbar_menu{
+        position: relative;
+        top: 4px;
+    }
+}
+@media (max-width: 1290px){
+    .container .navbar_logo a{
+        font-size: 28px;
+    }
+    .container .navbar_menu a{
+        font-size: 20px;
+    }
+}
+@media (max-width: 1230px){
+    .container .navbar_logo a{
+        font-size: 26px;
+    }
+    .container .navbar_menu a{
+        font-size: 18px;
+        position: relative;
+        top: 4px;
+    }
+}
+@media (max-width: 1170px){
+    .container .navbar_logo a{
+        font-size: 24px;
+    }
+    .container .navbar_menu a{
+        font-size: 16px;
+    }
+    .container{
+        padding-bottom: 10px
+    }
+}
+@media (max-width: 1112px){
+    .container .navbar_logo a{
+        font-size: 22px;
+    }
+    .container .navbar_menu a{
+        font-size: 15px;
+    }
+}
+@media (max-width: 1074px){
+    .navbar_menu{
+        display: none
+    }
+    .label_inputik{
+        visibility: visible;
+    }
+    .container .navbar_logo a{
+        font-size: 30px;
+    }
+}
+@media (max-width: 640px){
+    .container .navbar_logo a{
+        font-size: 22px;
+    }
+    .container .navbar_logo img{
+        height: 60px;
+        width: 60px;
+    }
+    .label_inputik{
+        top: 40px;
+    }
+    .label_inputik p{
+        font-size: 22px;
+    }
+}
+@media (max-width: 555px){
+     .container .navbar_logo a{
+        font-size: 18px;
+    }
+    .container .navbar_logo img{
+        position: relative;
+        top: 5px;
+        height: 50px;
+        width: 50px;
+    }
+    .label_inputik{
+        top: 37px;
+    }
+    .label_inputik p{
+        font-size: 18px;
+    }
+}
+@media (max-width: 515px){
+    .container .navbar_logo a{
+        font-size: 18px;
+    }
+    .container .navbar_logo img{
+        position: relative;
+        top: 15px;
+        height: 40px;
+        width: 40px;
+    }
+    .label_inputik{
+        top: 36px;
+        right: 100px;
+    }
+    .label_inputik p{
+        font-size: 18px;
+    }
+    .navbar_logo{
+        margin-left: 50px;
+    }
+}
+@media (max-width: 405px){
+    .label_inputik{
+        top: 36px;
+        right: 70px;
+    }
+}
+@media (max-width: 376px){
+    .label_inputik p{
+        visibility: hidden;
+    }
+    .container .navbar_logo a{
+        font-size: 20px;
+    }
+
+}
+@media (max-width: 360px){
+    .burger .logo_number_burger{
+        margin-left: 20px;
+    }
+}
+@media (max-width: 330px){
+    .burger .logo_number_burger{
+        margin-left: 30px;
+    }
+}
+/*---------------------------------Main---------------------------------------------*/
+@media (max-width: 1010px){
+    .start .image img{
+        height: 180px;
+        width: 180px;
+    }
+}
+@media (max-width: 920px){
+    .start .image img{
+        height: 160px;
+        width: 160px;
+    }
+}
+@media (max-width: 840px){
+    .start .image{
+        flex-flow: row wrap;
+        align-items: center;
+    }
+}
+/*---------------------------------liga_1---------------------------------------------*/
+@media (max-width: 940px){
+    .liga_1 .information{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .liga_1 .information .text{
+        width: 80vw;
+    }
+}
+@media (max-width: 394px){
+    .liga_1 .information .container1{
+        width: 300px;
+    }
+    .liga_1 .logo{
+        gap: 15px;
+    }
+}
+@media (max-width: 350px){
+    .liga_1 .information .container1{
+        width: 270px;
+    }
+}
+@media (max-width: 321px){
+    .liga_1 .information .container1{
+        width: 260px;
+    }
+    .liga_1 .logo{
+        gap: 5px;
+    }
+}
+/*---------------------------------bundesliga---------------------------------------------*/
+@media (max-width: 940px){
+    .bundesliga .information{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .bundesliga .information .text{
+        width: 80vw;
+    }
+}
+@media (max-width: 394px){
+    .bundesliga .information .container1{
+        width: 300px;
+    }
+    .bundesliga .logo{
+        gap: 15px;
+    }
+}
+@media (max-width: 350px){
+    .bundesliga .information .container1{
+        width: 270px;
+    }
+}
+@media (max-width: 321px){
+    .bundesliga .information .container1{
+        width: 260px;
+    }
+    .bundesliga .logo{
+        gap: 5px;
+    }
+}
+/*---------------------------------seria_a---------------------------------------------*/
+@media (max-width: 940px){
+    .seria_a .information{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .seria_a .information .text{
+        width: 80vw;
+    }
+}
+@media (max-width: 394px){
+    .seria_a .information .container1{
+        width: 300px;
+    }
+    .seria_a .logo{
+        gap: 15px;
+    }
+}
+@media (max-width: 350px){
+    .seria_a .information .container1{
+        width: 270px;
+    }
+}
+@media (max-width: 321px){
+    .seria_a .information .container1{
+        width: 260px;
+    }
+    .seria_a .logo{
+        gap: 5px;
+    }
+}
+/*---------------------------------la_liga---------------------------------------------*/
+@media (max-width: 940px){
+    .la_liga .information{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .la_liga .information .text{
+        width: 80vw;
+    }
+}
+@media (max-width: 397px){
+    .la_liga .information .container1{
+        height: 430px;
+    }
+}
+@media (max-width: 394px){
+    .la_liga .information .container1{
+        width: 300px;
+    }
+    .la_liga .logo{
+        gap: 15px;
+    }
+}
+@media (max-width: 397px){
+    .la_liga .information .container1{
+        height: 480px;
+    }
+}
+@media (max-width: 350px){
+    .la_liga .information .container1{
+        width: 270px;
+    }
+}
+@media (max-width: 321px){
+    .la_liga .information .container1{
+        width: 260px;
+    }
+    .la_liga .logo{
+        gap: 5px;
+    }
+}
+/*---------------------------------apl---------------------------------------------*/
+@media (max-width: 940px){
+    .apl .information{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .apl .information .text{
+        width: 80vw;
+    }
+}
+@media (max-width: 394px){
+    .apl .information .container1{
+        width: 300px;
+    }
+    .apl .logo{
+        gap: 15px;
+    }
+}
+@media (max-width: 350px){
+    .apl .information .container1{
+        width: 270px;
+    }
+}
+@media (max-width: 321px){
+    .apl .information .container1{
+        width: 260px;
+    }
+    .apl .logo{
+        gap: 5px;
+    }
+}
+/*--------------------------------Footer---------------------------------------------*/
+@media (max-width: 1170px){
+    address nav .container{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+}
+@media (max-width: 780px){
+    address nav .container{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+}
+@media (max-width: 600px){
+    address nav .container{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5,1fr);
+        gap: 20px;
+    }
+}
+@media (max-width: 375px){
+    address nav .container{
+        padding-left: 10px;
+    }
+}
